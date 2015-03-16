@@ -42,9 +42,6 @@ Initializes a new instance of the ColorRGB class.
 <summary>
 Class that represents a RGB color.
 </summary></member>
-        <member name="M:ImageMagick.ChannelMoments.get_EllipseEccentricity">
-=============================================================================================
-</member>
         <member name="M:ImageMagick.PathClosePath.#ctor">
 ==========================================================================================
 <summary>
@@ -170,6 +167,9 @@ Initializes a new instance of the MagickImageInfo class.
 <summary>
 Class that contains basic information about an image.
 </summary></member>
+        <member name="M:ImageMagick.ChannelMoments.get_EllipseEccentricity">
+=============================================================================================
+</member>
         <member name="M:ImageMagick.DrawablePopClipPath.#ctor">
 ==========================================================================================
 <summary>
@@ -638,6 +638,121 @@ Returns the Quantum depth.
 <summary>
 Class that can be used to acquire information about the Quantum.
 </summary></member>
+        <member name="P:ImageMagick.TiffReadDefines.IgnoreExifPoperties">
+==========================================================================================
+<summary>
+Specifies if the exif profile should be ignored (tiff:exif-properties).
+</summary></member>
+        <member name="M:ImageMagick.TiffReadDefines.#ctor">
+==========================================================================================
+<summary>
+Initializes a new instance of the TiffReadDefines class.
+</summary></member>
+        <member name="T:ImageMagick.TiffReadDefines">
+=============================================================================================
+<summary>
+Class for defines that are used when a tiff image is read.
+</summary></member>
+        <member name="P:ImageMagick.PdfReadDefines.UseTrimBox">
+==========================================================================================
+<summary>
+Force use of the trim box.
+</summary></member>
+        <member name="P:ImageMagick.PdfReadDefines.UseCropBox">
+==========================================================================================
+<summary>
+Force use of the crop box.
+</summary></member>
+        <member name="P:ImageMagick.PdfReadDefines.FitPage">
+==========================================================================================
+<summary>
+Scale the image the specified size
+</summary></member>
+        <member name="M:ImageMagick.PdfReadDefines.#ctor">
+==========================================================================================
+<summary>
+Initializes a new instance of the PdfReadDefines class.
+</summary></member>
+        <member name="T:ImageMagick.PdfReadDefines">
+=============================================================================================
+<summary>
+Class for defines that are used when a pdf image is read.
+</summary></member>
+        <member name="P:ImageMagick.JpegWriteDefines.SamplingFactors">
+==========================================================================================
+<summary>
+Set jpeg sampling factor (jpeg:sampling-factor).
+</summary></member>
+        <member name="P:ImageMagick.JpegWriteDefines.QuantizationTables">
+==========================================================================================
+<summary>
+File name that contains custom quantization tables (jpeg:q-table).
+</summary></member>
+        <member name="P:ImageMagick.JpegWriteDefines.Quality">
+==========================================================================================
+<summary>
+Set quality scaling for luminance and chrominance separately (jpeg:quality).
+</summary></member>
+        <member name="P:ImageMagick.JpegWriteDefines.OptimizeCoding">
+==========================================================================================
+<summary>
+Enables or disables optimize coding (jpeg:optimize-coding).
+</summary></member>
+        <member name="P:ImageMagick.JpegWriteDefines.Extent">
+==========================================================================================
+<summary>
+Search for compression quality that does not exceed the specified extent in kilobytes. (jpeg:extent).
+</summary></member>
+        <member name="P:ImageMagick.JpegWriteDefines.DctMethod">
+==========================================================================================
+<summary>
+Specifies the dtc method that will be used (jpeg:dct-method).
+</summary></member>
+        <member name="M:ImageMagick.JpegWriteDefines.#ctor">
+==========================================================================================
+<summary>
+Initializes a new instance of the JpegWriteDefines class.
+</summary></member>
+        <member name="T:ImageMagick.JpegWriteDefines">
+=============================================================================================
+<summary>
+Class for defines that are used when a jpeg image is written.
+</summary></member>
+        <member name="P:ImageMagick.DdsWriteDefines.WeightByAlpha">
+==========================================================================================
+<summary>
+Enables or disables weight by alpha when cluster fit is used (dds:weight-by-alpha).
+</summary></member>
+        <member name="P:ImageMagick.DdsWriteDefines.Mipmaps">
+==========================================================================================
+<summary>
+Specifies the number of mipmaps, zero will disable writing mipmaps (dds:mipmaps).
+</summary></member>
+        <member name="P:ImageMagick.DdsWriteDefines.Compression">
+==========================================================================================
+<summary>
+Specifies the compression that will be used (dds:compression).
+</summary></member>
+        <member name="P:ImageMagick.DdsWriteDefines.ClusterFit">
+==========================================================================================
+<summary>
+Enables or disables cluser fit (dds:cluster-fit).
+</summary></member>
+        <member name="M:ImageMagick.DdsWriteDefines.#ctor">
+==========================================================================================
+<summary>
+Initializes a new instance of the DdsWriteDefines class.
+</summary></member>
+        <member name="T:ImageMagick.DdsWriteDefines">
+=============================================================================================
+<summary>
+Class for defines that are used when a dds image is written.
+</summary></member>
+        <member name="T:ImageMagick.Defines.DdsCompression">
+==========================================================================================
+<summary>
+Specifies dds compression methods
+</summary></member>
         <member name="M:ImageMagick.PathSmoothQuadraticCurvetoRel.#ctor(System.Collections.Generic.IEnumerable`1{ImageMagick.Coordinate})">
 ==========================================================================================
 <summary>
@@ -1068,6 +1183,21 @@ Creates a new DrawableStrokeLineJoin instance.
 <summary>
 Encapsulation of the DrawableStrokeLineJoin object.
 </summary></member>
+        <member name="P:ImageMagick.DrawableStrokeLineCap.LineCap">
+==========================================================================================
+<summary>
+The line cap.
+</summary></member>
+        <member name="M:ImageMagick.DrawableStrokeLineCap.#ctor(ImageMagick.LineCap)">
+==========================================================================================
+<summary>
+Creates a new DrawableStrokeLineCap instance.
+</summary><param name="lineCap">The line cap.</param></member>
+        <member name="T:ImageMagick.DrawableStrokeLineCap">
+=============================================================================================
+<summary>
+Encapsulation of the DrawableStrokeLineCap object.
+</summary></member>
         <member name="P:ImageMagick.DrawableStrokeColor.Color">
 ==========================================================================================
 <summary>
@@ -1187,6 +1317,21 @@ Creates a new DrawableRoundRectangle instance.
 =============================================================================================
 <summary>
 Encapsulation of the DrawableRoundRectangle object.
+</summary></member>
+        <member name="P:ImageMagick.DrawableRotation.Angle">
+==========================================================================================
+<summary>
+The angle.
+</summary></member>
+        <member name="M:ImageMagick.DrawableRotation.#ctor(System.Double)">
+==========================================================================================
+<summary>
+Creates a new DrawableRotation instance.
+</summary><param name="angle">The angle.</param></member>
+        <member name="T:ImageMagick.DrawableRotation">
+=============================================================================================
+<summary>
+Encapsulation of the DrawableRotation object.
 </summary></member>
         <member name="P:ImageMagick.DrawableRectangle.UpperLeftY">
 ==========================================================================================
@@ -1815,42 +1960,42 @@ Removes the first occurrence of the specified image from the collection.
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="stream">The stream to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="stream">The stream to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.IO.Stream)">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="stream">The stream to read the image data from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="stream">The stream to read the image data from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.String,ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.String)">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.IO.FileInfo,ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="file">The file to read the frames from.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="file">The file to read the frames from.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.IO.FileInfo)">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="file">The file to read the frames from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="file">The file to read the frames from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.Byte[],ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="data">The byte array to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="data">The byte array to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Read(System.Byte[])">
 ==========================================================================================
 <summary>
 Read all image frames.
-</summary><param name="data">The byte array to read the image data from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="data">The byte array to read the image data from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.Quantize(ImageMagick.QuantizeSettings)">
 ==========================================================================================
 <summary>
@@ -2027,6 +2172,11 @@ Adds the image(s) from the specified file name to the collection.
 <summary>
 Adds a Clone of the images from the specified collection to this collection.
 </summary><param name="images">A collection of MagickImages.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImageCollection.AddRange(System.Collections.Generic.IEnumerable`1{ImageMagick.MagickImage})">
+==========================================================================================
+<summary>
+Adds a the specified images to this collection. The images will not be Cloned.
+</summary><param name="images">The images to add to the collection.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImageCollection.AddRange(System.Byte[],ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
@@ -2051,11 +2201,6 @@ Adds an image to the collection.
 ==========================================================================================
 <summary>
 Event that will we raised when a warning is thrown by ImageMagick.
-</summary></member>
-        <member name="P:ImageMagick.MagickImageCollection.ReadWarning">
-==========================================================================================
-<summary>
-Returns the warning that was raised during the read operation.
 </summary></member>
         <member name="P:ImageMagick.MagickImageCollection.IsReadOnly">
 ==========================================================================================
@@ -2610,16 +2755,21 @@ When comparing images, de-emphasize pixel differences with this color.
 <summary>
 When comparing images, emphasize pixel differences with this color.
 </summary><param name="color">The color.</param></member>
+        <member name="M:ImageMagick.MagickImage.SetDefines(ImageMagick.IDefines)">
+==========================================================================================
+<summary>
+Sets format-specific options with the specified defines.
+</summary><param name="defines">The defines to set.</param></member>
         <member name="M:ImageMagick.MagickImage.SetDefine(ImageMagick.MagickFormat,System.String,System.String)">
 ==========================================================================================
 <summary>
 Sets a format-specific option.
-</summary><param name="format">The format to set the option for.</param><param name="name">The name of the option.</param><param name="value">The value of the option.</param></member>
+</summary><param name="format">The format to set the define for.</param><param name="name">The name of the define.</param><param name="value">The value of the define.</param></member>
         <member name="M:ImageMagick.MagickImage.SetDefine(ImageMagick.MagickFormat,System.String,System.Boolean)">
 ==========================================================================================
 <summary>
 Sets a format-specific option.
-</summary><param name="format">The format to set the option for.</param><param name="name">The name of the option.</param><param name="flag">The value of the option.</param></member>
+</summary><param name="format">The format to set the define for.</param><param name="name">The name of the define.</param><param name="flag">The value of the define.</param></member>
         <member name="M:ImageMagick.MagickImage.SetAttribute(System.String,System.String)">
 ==========================================================================================
 <summary>
@@ -2805,57 +2955,57 @@ Reduce noise in image using a noise peak elimination filter.
 ==========================================================================================
 <summary>
 Read single image frame.
-</summary><param name="stream">The stream to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="stream">The stream to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.IO.Stream)">
 ==========================================================================================
 <summary>
 Read single image frame.
-</summary><param name="stream">The stream to read the image data from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="stream">The stream to read the image data from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.String,ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
 Read single vector image frame.
-</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.String,System.Int32,System.Int32)">
 ==========================================================================================
 <summary>
 Read single vector image frame.
-</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><param name="width">The width.</param><param name="height">The height.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><param name="width">The width.</param><param name="height">The height.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.String)">
 ==========================================================================================
 <summary>
 Read single image frame.
-</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="fileName">The fully qualified name of the image file, or the relative image file name.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(ImageMagick.MagickColor,System.Int32,System.Int32)">
 ==========================================================================================
 <summary>
 Read single vector image frame.
-</summary><param name="color">The color to fill the image with.</param><param name="width">The width.</param><param name="height">The height.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="color">The color to fill the image with.</param><param name="width">The width.</param><param name="height">The height.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.IO.FileInfo,ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
 Read single vector image frame.
-</summary><param name="file">The file to read the image from.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="file">The file to read the image from.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.IO.FileInfo)">
 ==========================================================================================
 <summary>
 Read single image frame.
-</summary><param name="file">The file to read the image from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="file">The file to read the image from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.Drawing.Bitmap)">
 ==========================================================================================
 <summary>
 Read single image frame.
-</summary><param name="bitmap">The bitmap to read the image from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="bitmap">The bitmap to read the image from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.Byte[],ImageMagick.MagickReadSettings)">
 ==========================================================================================
 <summary>
 Read single vector image frame.
-</summary><param name="data">The byte array to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="data">The byte array to read the image data from.</param><param name="readSettings">The settings to use when reading the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Read(System.Byte[])">
 ==========================================================================================
 <summary>
 Read single image frame.
-</summary><param name="data">The byte array to read the image data from.</param><returns>If a warning was raised while reading the image that warning will be returned.</returns><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="data">The byte array to read the image data from.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.RandomThreshold(System.UInt16,System.UInt16,ImageMagick.Channels)">
 ==========================================================================================
 <summary>
@@ -3084,6 +3234,16 @@ Returns the normalized moments of one or more image channels.
 <summary>
 Modulate percent hue, saturation, and brightness of an image.
 </summary><param name="brightness">The brightness percentage.</param><param name="saturation">The saturation percentage.</param><param name="hue">The hue percentage.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.Modulate(ImageMagick.Percentage,ImageMagick.Percentage)">
+==========================================================================================
+<summary>
+Modulate percent saturation and brightness of an image.
+</summary><param name="brightness">The brightness percentage.</param><param name="saturation">The saturation percentage.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.Modulate(ImageMagick.Percentage)">
+==========================================================================================
+<summary>
+Modulate percent brightness of an image.
+</summary><param name="brightness">The brightness percentage.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Minify">
 ==========================================================================================
 <summary>
@@ -3145,24 +3305,48 @@ Maps the given color to "black" and "white" values, linearly spreading out the c
 level values on a channel by channel bases, as per level(). The given colors allows you to
 specify different level ranges for each of the color channels separately.
 </summary><param name="blackColor">The color to map black to/from</param><param name="whiteColor">The color to map white to/from</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.Level(ImageMagick.Percentage,ImageMagick.Percentage,System.Double,ImageMagick.Channels)">
+==========================================================================================
+<summary>
+Adjust the levels of the image by scaling the colors falling between specified white and
+black points to the full available quantum range.
+</summary><param name="blackPointPercentage">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePointPercentage">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><param name="midpoint">The gamma correction to apply to the image. (Useful range of 0 to 10)</param><param name="channels">The channel(s) to level.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Level(System.UInt16,System.UInt16,System.Double,ImageMagick.Channels)">
 ==========================================================================================
 <summary>
 Adjust the levels of the image by scaling the colors falling between specified white and
 black points to the full available quantum range.
 </summary><param name="blackPoint">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePoint">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><param name="midpoint">The gamma correction to apply to the image. (Useful range of 0 to 10)</param><param name="channels">The channel(s) to level.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.Level(ImageMagick.Percentage,ImageMagick.Percentage,System.Double)">
+==========================================================================================
+<summary>
+Adjust the levels of the image by scaling the colors falling between specified white and
+black points to the full available quantum range.
+</summary><param name="blackPointPercentage">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePointPercentage">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><param name="midpoint">The gamma correction to apply to the image. (Useful range of 0 to 10)</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Level(System.UInt16,System.UInt16,System.Double)">
 ==========================================================================================
 <summary>
 Adjust the levels of the image by scaling the colors falling between specified white and
 black points to the full available quantum range.
 </summary><param name="blackPoint">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePoint">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><param name="midpoint">The gamma correction to apply to the image. (Useful range of 0 to 10)</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.Level(ImageMagick.Percentage,ImageMagick.Percentage,ImageMagick.Channels)">
+==========================================================================================
+<summary>
+Adjust the levels of the image by scaling the colors falling between specified white and
+black points to the full available quantum range. Uses a midpoint of 1.0.
+</summary><param name="blackPointPercentage">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePointPercentage">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><param name="channels">The channel(s) to level.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Level(System.UInt16,System.UInt16,ImageMagick.Channels)">
 ==========================================================================================
 <summary>
 Adjust the levels of the image by scaling the colors falling between specified white and
 black points to the full available quantum range. Uses a midpoint of 1.0.
 </summary><param name="blackPoint">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePoint">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><param name="channels">The channel(s) to level.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.Level(ImageMagick.Percentage,ImageMagick.Percentage)">
+==========================================================================================
+<summary>
+Adjust the levels of the image by scaling the colors falling between specified white and
+black points to the full available quantum range. Uses a midpoint of 1.0.
+</summary><param name="blackPointPercentage">The darkest color in the image. Colors darker are set to zero.</param><param name="whitePointPercentage">The lightest color in the image. Colors brighter are set to the maximum quantum value.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Level(System.UInt16,System.UInt16)">
 ==========================================================================================
 <summary>
@@ -3293,6 +3477,11 @@ Apply a color lookup table (Hald CLUT) to the image.
 <summary>
 Converts the colors in the image to gray.
 </summary><param name="method">The pixel intensity method to use.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.GetXmpProfile">
+==========================================================================================
+<summary>
+Retrieve the xmp profile from the image.
+</summary><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.GetWritablePixels(System.Int32,System.Int32,System.Int32,System.Int32)">
 ==========================================================================================
 <summary>
@@ -3602,13 +3791,13 @@ Draw on image using a collection of drawables.
 <summary>
 Draw on image using one or more drawables.
 </summary><param name="drawables">The drawable(s) to draw on the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
-        <member name="M:ImageMagick.MagickImage.Distort(ImageMagick.DistortMethod,System.Double[],System.Boolean)">
+        <member name="M:ImageMagick.MagickImage.Distort(ImageMagick.DistortMethod,System.Boolean,System.Double[])">
 ==========================================================================================
 <summary>
 Distorts an image using various distortion methods, by mapping color lookups of the source
 image to a new destination image usually of the same size as the source image, unless
 'bestfit' is set to true.
-</summary><param name="method">The distortion method to use.</param><param name="arguments">An array containing the arguments for the distortion.</param><param name="bestfit">Attempt to 'bestfit' the size of the resulting image.</param><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="method">The distortion method to use.</param><param name="bestfit">Attempt to 'bestfit' the size of the resulting image.</param><param name="arguments">An array containing the arguments for the distortion.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Distort(ImageMagick.DistortMethod,System.Double[])">
 ==========================================================================================
 <summary>
@@ -3691,6 +3880,14 @@ A simple image enhancement technique that attempts to improve the contrast in an
 It differs from the more sophisticated histogram equalization in that it can only apply a
 linear scaling function to the image pixel values. As a result the 'enhancement' is less harsh.
 </summary><param name="blackPoint">The black point.</param><param name="whitePoint">The white point.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.ContrastStretch(ImageMagick.Percentage)">
+==========================================================================================
+<summary>
+A simple image enhancement technique that attempts to improve the contrast in an image by
+'stretching' the range of intensity values it contains to span a desired range of values.
+It differs from the more sophisticated histogram equalization in that it can only apply a
+linear scaling function to the image pixel values. As a result the 'enhancement' is less harsh.
+</summary><param name="blackPoint">The black point.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.Contrast(System.Boolean)">
             <summary>
 Contrast image (enhance intensity differences in image)
@@ -3793,6 +3990,14 @@ Compose an image onto another at specified offset using the 'In' operator.
             <param name="image">The image to composite with this image.</param>
             <param name="x">The X offset from origin.</param>
             <param name="y">The Y offset from origin.</param>
+            <exception cref="T:ImageMagick.MagickException" />
+        </member>
+        <member name="M:ImageMagick.MagickImage.Composite(ImageMagick.MagickImage,ImageMagick.CompositeOperator)">
+            <summary>
+Compose an image onto another using the specified algorithm.
+</summary>
+            <param name="image">The image to composite with this image.</param>
+            <param name="compose">The algorithm to use.</param>
             <exception cref="T:ImageMagick.MagickException" />
         </member>
         <member name="M:ImageMagick.MagickImage.CompareTo(ImageMagick.MagickImage)">
@@ -4124,12 +4329,18 @@ Add noise to the specified channel of the image with the specified noise type.
 <summary>
 Add noise to image with the specified noise type.
 </summary><param name="noiseType">The type of noise that should be added to the image.</param><exception cref="T:ImageMagick.MagickException" /></member>
-        <member name="M:ImageMagick.MagickImage.AdaptiveThreshold(System.Int32,System.Int32,System.Int32)">
+        <member name="M:ImageMagick.MagickImage.AdaptiveThreshold(System.Int32,System.Int32,ImageMagick.Percentage)">
 ==========================================================================================
 <summary>
 Local adaptive threshold image.
 http://www.dai.ed.ac.uk/HIPR2/adpthrsh.htm
-</summary><param name="width">The width of the pixel neighborhood.</param><param name="height">The height of the pixel neighborhood.</param><param name="offset">Constant to subtract from pixel neighborhood mean.</param><exception cref="T:ImageMagick.MagickException" /></member>
+</summary><param name="width">The width of the pixel neighborhood.</param><param name="height">The height of the pixel neighborhood.</param><param name="bias">Constant to subtract from pixel neighborhood mean.</param><exception cref="T:ImageMagick.MagickException" /></member>
+        <member name="M:ImageMagick.MagickImage.AdaptiveThreshold(System.Int32,System.Int32,System.UInt16)">
+==========================================================================================
+<summary>
+Local adaptive threshold image.
+http://www.dai.ed.ac.uk/HIPR2/adpthrsh.htm
+</summary><param name="width">The width of the pixel neighborhood.</param><param name="height">The height of the pixel neighborhood.</param><param name="bias">Constant to subtract from pixel neighborhood mean.</param><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="M:ImageMagick.MagickImage.AdaptiveThreshold(System.Int32,System.Int32)">
 ==========================================================================================
 <summary>
@@ -4294,6 +4505,11 @@ Color to use when drawing object outlines.
 <summary>
 Enabled/disable stroke anti-aliasing.
 </summary></member>
+        <member name="P:ImageMagick.MagickImage.Signature">
+==========================================================================================
+<summary>
+Returns the signature of this image.
+</summary><exception cref="T:ImageMagick.MagickException" /></member>
         <member name="P:ImageMagick.MagickImage.ResolutionY">
 ==========================================================================================
 <summary>
@@ -4313,11 +4529,6 @@ Units of image resolution.
 ==========================================================================================
 <summary>
 The type of rendering intent.
-</summary></member>
-        <member name="P:ImageMagick.MagickImage.ReadWarning">
-==========================================================================================
-<summary>
-Returns the warning that was raised during the read operation.
 </summary></member>
         <member name="P:ImageMagick.MagickImage.Quality">
 ==========================================================================================
@@ -4349,11 +4560,6 @@ null to unset an existing mask.
 ==========================================================================================
 <summary>
 The label of the image.
-</summary></member>
-        <member name="P:ImageMagick.MagickImage.IsMonochrome">
-==========================================================================================
-<summary>
-Transform image to black and white.
 </summary></member>
         <member name="P:ImageMagick.MagickImage.Interpolate">
 ==========================================================================================
@@ -4498,6 +4704,11 @@ Image class (DirectClass or PseudoClass)
 NOTE: Setting a DirectClass image to PseudoClass will result in the loss of color information
 if the number of colors in the image is greater than the maximum palette size (either 256 (Q8)
 or 65536 (Q16).
+</summary></member>
+        <member name="P:ImageMagick.MagickImage.Channels">
+==========================================================================================
+<summary>
+Returns the channels of the image.
 </summary></member>
         <member name="P:ImageMagick.MagickImage.BoxColor">
 ==========================================================================================
@@ -4743,46 +4954,6 @@ The centroid.
 <summary>
 Encapsulation of the ImageMagick ChannelMoments object.
 </summary></member>
-        <member name="M:ImageMagick.PointD.GetHashCode">
-==========================================================================================
-<summary>
-Servers as a hash of this type.
-</summary></member>
-        <member name="M:ImageMagick.PointD.Equals(ImageMagick.PointD)">
-==========================================================================================
-<summary>
-Determines whether the specified point is equal to the current point.
-</summary><param name="other">The point to compare this point with.</param></member>
-        <member name="M:ImageMagick.PointD.Equals(System.Object)">
-==========================================================================================
-<summary>
-Determines whether the specified object is equal to the current point.
-</summary><param name="obj">The object to compare this point with.</param></member>
-        <member name="P:ImageMagick.PointD.Y">
-==========================================================================================
-<summary>
-The y-coordinate of this Point.
-</summary></member>
-        <member name="P:ImageMagick.PointD.X">
-==========================================================================================
-<summary>
-The x-coordinate of this Point.
-</summary></member>
-        <member name="M:ImageMagick.PointD.#ctor(System.Double,System.Double)">
-==========================================================================================
-<summary>
-Initializes a new instance of the PointD struct using the specified x and y.
-</summary><param name="x">The x.</param><param name="y">The y.</param></member>
-        <member name="M:ImageMagick.PointD.#ctor(System.Double)">
-==========================================================================================
-<summary>
-Initializes a new instance of the PointD struct using the specified x and y.
-</summary><param name="xy">The x and y.</param></member>
-        <member name="T:ImageMagick.PointD">
-=============================================================================================
-<summary>
-Struct for a point with doubles.
-</summary></member>
         <member name="M:ImageMagick.Statistics.GetHashCode">
 ==========================================================================================
 <summary>
@@ -5026,6 +5197,61 @@ The mean error per pixel computed when an image is color reduced.
 <summary>
 Encapsulates the error information.
 </summary></member>
+        <member name="M:ImageMagick.XmpProfile.ToXDocument">
+==========================================================================================
+<summary>
+Converts this instance to a XDocument.
+</summary></member>
+        <member name="M:ImageMagick.XmpProfile.ToIXPathNavigable">
+==========================================================================================
+<summary>
+Converts this instance to an IXPathNavigable.
+</summary></member>
+        <member name="M:ImageMagick.XmpProfile.FromXDocument(System.Xml.Linq.XDocument)">
+==========================================================================================
+<summary>
+Creates an instance from the specified IXPathNavigable.
+</summary><param name="document">A document containing the profile.</param></member>
+        <member name="M:ImageMagick.XmpProfile.FromIXPathNavigable(System.Xml.XPath.IXPathNavigable)">
+==========================================================================================
+<summary>
+Creates an instance from the specified IXPathNavigable.
+</summary><param name="document">A document containing the profile.</param></member>
+        <member name="M:ImageMagick.XmpProfile.CreateReader">
+==========================================================================================
+<summary>
+Creates a XmlReader that can be used to read the data of the profile.
+</summary></member>
+        <member name="M:ImageMagick.XmpProfile.#ctor(System.String)">
+==========================================================================================
+<summary>
+Initializes a new instance of the XmpProfile class.
+</summary><param name="fileName">The fully qualified name of the profile file, or the relative profile file name.</param></member>
+        <member name="M:ImageMagick.XmpProfile.#ctor(System.IO.Stream)">
+==========================================================================================
+<summary>
+Initializes a new instance of the XmpProfile class.
+</summary><param name="stream">A stream containing the profile.</param></member>
+        <member name="M:ImageMagick.XmpProfile.#ctor(System.Xml.Linq.XDocument)">
+==========================================================================================
+<summary>
+Initializes a new instance of the XmpProfile class.
+</summary><param name="document">A document containing the profile.</param></member>
+        <member name="M:ImageMagick.XmpProfile.#ctor(System.Xml.XPath.IXPathNavigable)">
+==========================================================================================
+<summary>
+Initializes a new instance of the XmpProfile class.
+</summary><param name="document">A document containing the profile.</param></member>
+        <member name="M:ImageMagick.XmpProfile.#ctor(System.Byte[])">
+==========================================================================================
+<summary>
+Initializes a new instance of the XmpProfile class.
+</summary><param name="data">A byte array containing the profile.</param></member>
+        <member name="T:ImageMagick.XmpProfile">
+=============================================================================================
+<summary>
+Class that contains an XMP profile.
+</summary></member>
         <member name="M:ImageMagick.IptcProfile.SetValue(ImageMagick.IptcTag,System.String)">
 ==========================================================================================
 <summary>
@@ -5041,6 +5267,16 @@ Sets the value of the specified tag.
 <summary>
 Changes the encoding for all the values,
 </summary><param name="encoding">The encoding to use when storing the bytes.</param></member>
+        <member name="M:ImageMagick.IptcProfile.RemoveValue(ImageMagick.IptcTag)">
+==========================================================================================
+<summary>
+Removes the value with the specified tag.
+</summary><param name="tag">The tag of the iptc value.</param></member>
+        <member name="M:ImageMagick.IptcProfile.GetValue(ImageMagick.IptcTag)">
+==========================================================================================
+<summary>
+Returns the value with the specified tag.
+</summary><param name="tag">The tag of the iptc value.</param></member>
         <member name="P:ImageMagick.IptcProfile.Values">
 ==========================================================================================
 <summary>
@@ -5132,6 +5368,16 @@ All iptc tags.
 <summary>
 Sets the value of the specified tag.
 </summary><param name="tag">The tag of the exif value.</param><param name="value">The value.</param></member>
+        <member name="M:ImageMagick.ExifProfile.RemoveValue(ImageMagick.ExifTag)">
+==========================================================================================
+<summary>
+Removes the value with the specified tag.
+</summary><param name="tag">The tag of the exif value.</param></member>
+        <member name="M:ImageMagick.ExifProfile.GetValue(ImageMagick.ExifTag)">
+==========================================================================================
+<summary>
+Returns the value with the specified tag.
+</summary><param name="tag">The tag of the exif value.</param></member>
         <member name="M:ImageMagick.ExifProfile.CreateThumbnail">
 ==========================================================================================
 <summary>
@@ -5431,6 +5677,11 @@ Creates a new Pixel instance.
 <summary>
 Class that can be used to access an individual pixel of an image.
 </summary></member>
+        <member name="M:ImageMagick.ConvolveMatrix.#ctor(System.Int32,System.Double[])">
+==========================================================================================
+<summary>
+Creates a new ConvolveMatrix instance with the specified order.
+</summary><param name="order">The order.</param><param name="values">The values to initialize the matrix with.</param></member>
         <member name="M:ImageMagick.ConvolveMatrix.#ctor(System.Int32)">
 ==========================================================================================
 <summary>
@@ -5441,6 +5692,11 @@ Creates a new ConvolveMatrix instance with the specified order.
 <summary>
 Encapsulates a convolution kernel.
 </summary></member>
+        <member name="M:ImageMagick.ColorMatrix.#ctor(System.Int32,System.Double[])">
+==========================================================================================
+<summary>
+Creates a new ColorMatrix instance with the specified order of 1 to 6.
+</summary><param name="order">The order (1 to 6).</param><param name="values">The values to initialize the matrix with.</param></member>
         <member name="M:ImageMagick.ColorMatrix.#ctor(System.Int32)">
 ==========================================================================================
 <summary>
@@ -5456,6 +5712,16 @@ Encapsulates a color matrix in the order of 1 to 6 (1x1 through 6x6).
 <summary>
 Set the value at the specified x/y position.
 </summary><param name="x">The x position</param><param name="y">The y position</param><param name="value">The value</param></member>
+        <member name="M:ImageMagick.DoubleMatrix.SetRow(System.Int32,System.Double[])">
+==========================================================================================
+<summary>
+Set the row at the specified y position.
+</summary><param name="y">The y position</param><param name="values">The values</param></member>
+        <member name="M:ImageMagick.DoubleMatrix.SetColumn(System.Int32,System.Double[])">
+==========================================================================================
+<summary>
+Set the column at the specified x position.
+</summary><param name="x">The x position</param><param name="values">The values</param></member>
         <member name="M:ImageMagick.DoubleMatrix.GetValue(System.Int32,System.Int32)">
 ==========================================================================================
 <summary>
@@ -5516,6 +5782,16 @@ The format.
 <summary>
 The description of the format.
 </summary></member>
+        <member name="P:ImageMagick.MagickFormatInfo.CanWriteMultithreaded">
+==========================================================================================
+<summary>
+The format can write multithreaded.
+</summary></member>
+        <member name="P:ImageMagick.MagickFormatInfo.CanReadMultithreaded">
+==========================================================================================
+<summary>
+The format can read multithreaded.
+</summary></member>
         <member name="T:ImageMagick.MagickFormatInfo">
 =============================================================================================
 <summary>
@@ -5536,15 +5812,20 @@ Sets a format-specific option.
 <summary>
 The width.
 </summary></member>
-        <member name="P:ImageMagick.MagickReadSettings.Height">
+        <member name="P:ImageMagick.MagickReadSettings.UseMonochrome">
 ==========================================================================================
 <summary>
-The height.
+Use monochrome reader.
 </summary></member>
         <member name="P:ImageMagick.MagickReadSettings.PixelStorage">
 ==========================================================================================
 <summary>
 The settings for pixel storage.
+</summary></member>
+        <member name="P:ImageMagick.MagickReadSettings.Height">
+==========================================================================================
+<summary>
+The height.
 </summary></member>
         <member name="P:ImageMagick.MagickReadSettings.FrameCount">
 ==========================================================================================
@@ -5565,6 +5846,11 @@ The format of the image.
 ==========================================================================================
 <summary>
 Vertical and horizontal resolution in pixels.
+</summary></member>
+        <member name="P:ImageMagick.MagickReadSettings.Defines">
+==========================================================================================
+<summary>
+Defines that should be set before the image is read.
 </summary></member>
         <member name="P:ImageMagick.MagickReadSettings.ColorSpace">
 ==========================================================================================
@@ -5605,6 +5891,51 @@ Initializes a new instance of the PixelStorageSettings class.
 =============================================================================================
 <summary>
 Class that contains setting for pixel storage.
+</summary></member>
+        <member name="M:ImageMagick.PointD.GetHashCode">
+==========================================================================================
+<summary>
+Servers as a hash of this type.
+</summary></member>
+        <member name="M:ImageMagick.PointD.Equals(ImageMagick.PointD)">
+==========================================================================================
+<summary>
+Determines whether the specified point is equal to the current point.
+</summary><param name="other">The point to compare this point with.</param></member>
+        <member name="M:ImageMagick.PointD.Equals(System.Object)">
+==========================================================================================
+<summary>
+Determines whether the specified object is equal to the current point.
+</summary><param name="obj">The object to compare this point with.</param></member>
+        <member name="P:ImageMagick.PointD.Y">
+==========================================================================================
+<summary>
+The y-coordinate of this Point.
+</summary></member>
+        <member name="P:ImageMagick.PointD.X">
+==========================================================================================
+<summary>
+The x-coordinate of this Point.
+</summary></member>
+        <member name="M:ImageMagick.PointD.#ctor(System.String)">
+==========================================================================================
+<summary>
+Initializes a new instance of the PointD class using the specified string.
+</summary><param name="value">PointD specifications in the form: &lt;x&gt;x&lt;y&gt; (where x, y are numbers)</param></member>
+        <member name="M:ImageMagick.PointD.#ctor(System.Double,System.Double)">
+==========================================================================================
+<summary>
+Initializes a new instance of the PointD struct using the specified x and y.
+</summary><param name="x">The x.</param><param name="y">The y.</param></member>
+        <member name="M:ImageMagick.PointD.#ctor(System.Double)">
+==========================================================================================
+<summary>
+Initializes a new instance of the PointD struct using the specified x and y.
+</summary><param name="xy">The x and y.</param></member>
+        <member name="T:ImageMagick.PointD">
+=============================================================================================
+<summary>
+Struct for a point with doubles.
 </summary></member>
         <member name="T:ImageMagick.WarningEventArgs">
 =============================================================================================
@@ -5756,15 +6087,15 @@ Specified the type of noise that should be added to the image.
 <summary>
 Specifies the morphology methods.
 </summary></member>
-        <member name="T:ImageMagick.MagickFormat">
-=============================================================================================
-<summary>
-Specifies the different file formats that are supported by ImageMagick.
-</summary></member>
         <member name="T:ImageMagick.LineJoin">
 =============================================================================================
 <summary>
 Specifies line join.
+</summary></member>
+        <member name="T:ImageMagick.LineCap">
+=============================================================================================
+<summary>
+Specifies line cap.
 </summary></member>
         <member name="T:ImageMagick.Kernel">
 =============================================================================================
@@ -5800,11 +6131,6 @@ Specifies the evaluate operator.
 =============================================================================================
 <summary>
 Specifies the error metric types.
-</summary></member>
-        <member name="T:ImageMagick.Endian">
-=============================================================================================
-<summary>
-Specifies endian.
 </summary></member>
         <member name="T:ImageMagick.DistortMethod">
 =============================================================================================
@@ -5886,26 +6212,6 @@ Creates a new DrawableAffine instance.
 <summary>
 Encapsulates a 3-by-3 affine matrix that represents a geometric transform.
 </summary></member>
-        <member name="P:ImageMagick.DrawableStrokeLineCap.LineCap">
-==========================================================================================
-<summary>
-The line cap.
-</summary></member>
-        <member name="M:ImageMagick.DrawableStrokeLineCap.#ctor(ImageMagick.LineCap)">
-==========================================================================================
-<summary>
-Creates a new DrawableStrokeLineCap instance.
-</summary><param name="lineCap">The line cap.</param></member>
-        <member name="T:ImageMagick.DrawableStrokeLineCap">
-=============================================================================================
-<summary>
-Encapsulation of the DrawableStrokeLineCap object.
-</summary></member>
-        <member name="T:ImageMagick.LineCap">
-=============================================================================================
-<summary>
-Specifies line cap.
-</summary></member>
         <member name="P:ImageMagick.DrawableScaling.Y">
 ==========================================================================================
 <summary>
@@ -5925,6 +6231,62 @@ Creates a new DrawableScaling instance.
 =============================================================================================
 <summary>
 Encapsulation of the DrawableScaling object.
+</summary></member>
+        <member name="P:ImageMagick.JpegReadDefines.SkipProfiles">
+==========================================================================================
+<summary>
+Specifies the profile that should be skipped when the image is read (profile:skip).
+</summary></member>
+        <member name="P:ImageMagick.JpegReadDefines.Size">
+==========================================================================================
+<summary>
+Specifies the size the scale the image to (jpeg:size). The output image won't be exactly
+the specified size. More information can be found here: http://jpegclub.org/djpeg/.
+</summary></member>
+        <member name="P:ImageMagick.JpegReadDefines.FancyUpsampling">
+==========================================================================================
+<summary>
+Enables or disables fancy upsampling (jpeg:fancy-upsampling).
+</summary></member>
+        <member name="P:ImageMagick.JpegReadDefines.DctMethod">
+==========================================================================================
+<summary>
+Specifies the dtc method that will be used (jpeg:dct-method).
+</summary></member>
+        <member name="P:ImageMagick.JpegReadDefines.Colors">
+==========================================================================================
+<summary>
+Specifies the size desired number of colors (jpeg:colors).
+</summary></member>
+        <member name="P:ImageMagick.JpegReadDefines.BlockSmoothing">
+==========================================================================================
+<summary>
+Enables or disables block smoothing (jpeg:block-smoothing).
+</summary></member>
+        <member name="M:ImageMagick.JpegReadDefines.#ctor">
+==========================================================================================
+<summary>
+Initializes a new instance of the JpegReadDefines class.
+</summary></member>
+        <member name="T:ImageMagick.JpegReadDefines">
+=============================================================================================
+<summary>
+Class for defines that are used when a jpeg image is read.
+</summary></member>
+        <member name="T:ImageMagick.Defines.DctMethod">
+==========================================================================================
+<summary>
+Specifies DCT method.
+</summary></member>
+        <member name="T:ImageMagick.Defines.ProfileTypes">
+==========================================================================================
+<summary>
+Specifies profile types
+</summary></member>
+        <member name="T:ImageMagick.IReadDefines">
+=============================================================================================
+<summary>
+Interface for defines that are used when reading an image.
 </summary></member>
         <member name="M:ImageMagick.PathLinetoVerticalAbs.#ctor(System.Double)">
 ==========================================================================================
@@ -6106,20 +6468,95 @@ Creates a new DrawableTextAntialias instance.
 <summary>
 Encapsulation of the DrawableTextAntialias object.
 </summary></member>
-        <member name="P:ImageMagick.DrawableRotation.Angle">
+        <member name="P:ImageMagick.TiffWriteDefines.TileGeometry">
 ==========================================================================================
 <summary>
-The angle.
+Specifies the tile geometry (tiff:tile-geometry).
 </summary></member>
-        <member name="M:ImageMagick.DrawableRotation.#ctor(System.Double)">
+        <member name="P:ImageMagick.TiffWriteDefines.RowsPerStrip">
 ==========================================================================================
 <summary>
-Creates a new DrawableRotation instance.
-</summary><param name="angle">The angle.</param></member>
-        <member name="T:ImageMagick.DrawableRotation">
+Specifies the rows per strip (tiff:rows-per-strip).
+</summary></member>
+        <member name="P:ImageMagick.TiffWriteDefines.FillOrder">
+==========================================================================================
+<summary>
+Specifies the endianness of the tiff file (tiff:fill-order).
+</summary></member>
+        <member name="P:ImageMagick.TiffWriteDefines.Endian">
+==========================================================================================
+<summary>
+Specifies the endianness of the tiff file (tiff:endian).
+</summary></member>
+        <member name="P:ImageMagick.TiffWriteDefines.Alpha">
+==========================================================================================
+<summary>
+Specifies the tiff alpha (tiff:alpha).
+</summary></member>
+        <member name="M:ImageMagick.TiffWriteDefines.#ctor">
+==========================================================================================
+<summary>
+Initializes a new instance of the TiffWriteDefines class.
+</summary></member>
+        <member name="T:ImageMagick.TiffWriteDefines">
 =============================================================================================
 <summary>
-Encapsulation of the DrawableRotation object.
+Class for defines that are used when a tiff image is written.
+</summary></member>
+        <member name="T:ImageMagick.Defines.TiffAlpha">
+==========================================================================================
+<summary>
+Specifies tiff alpha options.
+</summary></member>
+        <member name="P:ImageMagick.DefineCreator.Defines">
+==========================================================================================
+<summary>
+The defines that should be set as an define on an image
+</summary></member>
+        <member name="T:ImageMagick.DefineCreator">
+=============================================================================================
+<summary>
+Base class that can create defines.
+</summary></member>
+        <member name="P:ImageMagick.IDefines.Defines">
+==========================================================================================
+<summary>
+The defines that should be set as an define on an image
+</summary></member>
+        <member name="T:ImageMagick.IDefines">
+=============================================================================================
+<summary>
+Interface for an object that specifies defines for a MagickImage.
+</summary></member>
+        <member name="P:ImageMagick.IDefine.Value">
+==========================================================================================
+<summary>
+The value of the define.
+</summary></member>
+        <member name="P:ImageMagick.IDefine.Name">
+==========================================================================================
+<summary>
+The name of the define.
+</summary></member>
+        <member name="P:ImageMagick.IDefine.Format">
+==========================================================================================
+<summary>
+The format to set the define for.
+</summary></member>
+        <member name="T:ImageMagick.IDefine">
+=============================================================================================
+<summary>
+Interface for a define.
+</summary></member>
+        <member name="T:ImageMagick.MagickFormat">
+=============================================================================================
+<summary>
+Specifies the different file formats that are supported by ImageMagick.
+</summary></member>
+        <member name="T:ImageMagick.Endian">
+=============================================================================================
+<summary>
+Specifies endian.
 </summary></member>
         <member name="P:ImageMagick.DrawableFont.Family">
 ==========================================================================================
@@ -6480,6 +6917,11 @@ Initializes a new instance of the MagickColor class.
 =============================================================================================
 <summary>
 Class that represents a color.
+</summary></member>
+        <member name="M:ImageMagick.MagickGeometry.ToString">
+==========================================================================================
+<summary>
+Returns a string that represents the current geometry.
 </summary></member>
         <member name="M:ImageMagick.MagickGeometry.GetHashCode">
 ==========================================================================================
